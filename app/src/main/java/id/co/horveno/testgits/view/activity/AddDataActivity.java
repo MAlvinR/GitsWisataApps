@@ -76,6 +76,7 @@ public class AddDataActivity extends AppCompatActivity implements View.OnClickLi
 
         setSupportActionBar(uploadToolbar);
         getSupportActionBar().setTitle("Upload New Data");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         addCategoryField.setFocusable(false);
         addCategoryField.setFocusableInTouchMode(false);
