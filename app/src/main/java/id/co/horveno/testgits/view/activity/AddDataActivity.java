@@ -1,7 +1,6 @@
 package id.co.horveno.testgits.view.activity;
 
 import android.Manifest;
-import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
@@ -16,7 +15,6 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -29,10 +27,7 @@ import net.gotev.uploadservice.MultipartUploadRequest;
 import net.gotev.uploadservice.UploadNotificationConfig;
 
 import id.co.horveno.testgits.utilities.Constant;
-import id.co.horveno.testgits.utilities.ImageUtil;
-import okhttp3.MediaType;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.UUID;
 
