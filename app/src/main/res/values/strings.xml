@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Explorenesia</string>
+    <string name="title_activity_wisata">WisataActivity</string>
+    <string name="username_error">Username is Empty</string>
+    <string name="password_error">Password is Empty</string>
+    <string name="title_activity_kl">KL</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="progress_error">Error</string>
+    <string name="progress_retry">Retry</string>
+    <string name="please_wait">Please Wait</string>
+    <string name="network_error">Couldn\'t connect to server, please try again</string>
+    <string name="title_activity_as">AS</string>
+    <string name="login_text">Login</string>
+    <string name="no_account">NO ACCOUNT YET?</string>
+    <string name="create_account">CREATE ONE</string>
+    <string name="register_success">Register success, Please login now!</string>
+    <string name="register_text">Register</string>
+    <string name="hint_firstname">Firstname</string>
+    <string name="hint_lastname">Lastname</string>
+    <string name="hint_bdate">Birth Date</string>
+    <string name="hint_gender">Gender</string>
+    <string name="hint_phone">Phone Number</string>
+    <string name="login_here">LOGIN HERE</string>
+    <string name="already_account">ALREADY HAVE AN ACCOUNT?</string>
+    <string name="DATE_DIALOG">RegisterActivity.DateDialog</string>
+    <string name="title_activity_detail">DetailActivity</string>
+
+    <!--Menus-->
+    <string name="action_settings">Settings</string>
+
+    <!--Sort Categories-->
+    <string name="action_sort">Sort</string>
+    <string name="sort_dataran_tinggi">Dataran Tinggi</string>
+    <string name="sort_dataran_rendah">Dataran Rendah</string>
+    <string name="sort_pantai">Pantai</string>
+    <string name="sort_by">Sort by</string>
+    <string name="action_addData">Add Data</string>
+    <string name="action_logout">Log Out</string>
+    <string name="hint_judul">Judul</string>
+    <string name="hint_category">Category</string>
+    <string name="hint_location">Location</string>
+    <string name="hint_description">Decription</string>
+    <string name="action_upload">Upload</string>
+    <string name="credential_notif">Please enter your credential!</string>
+    <string name="upload_notif">Please enter your data!</string>
+</resources>

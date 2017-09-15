@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/borobudur"
+    tools:context="id.co.horveno.testgits.view.activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="40dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="60dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logoicon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/login_username_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_username"
+                android:inputType="text"
+                android:textColor="@color/colorPrimaryTextLight"
+                android:textColorHint="@color/colorPrimaryTextLight"
+                app:met_baseColor="@color/colorPrimaryTextLight"
+                app:met_errorColor="@color/error_input"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/colorPrimaryTextLight" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/login_password_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword"
+                android:textColor="@color/colorPrimaryTextLight"
+                android:textColorHint="@color/colorPrimaryTextLight"
+                app:met_baseColor="@color/colorPrimaryTextLight"
+                app:met_errorColor="@color/error_input"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/colorPrimaryTextLight" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="@color/colorOrange"
+            android:text="@string/login_text"
+            android:textColor="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_account"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/register_button"
+                android:onClick="toRegisterActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/create_account"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="image_border_curvature">5dp</dimen>
+    <dimen name="app_bar_height">250dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="dimen_8dp">8dp</dimen>
+</resources>

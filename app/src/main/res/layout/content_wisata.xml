@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".view.activity.WisataActivity"
+    tools:showIn="@layout/activity_wisata">
+
+    <ss.com.bannerslider.views.BannerSlider
+        android:id="@+id/sliderWisata"
+        android:layout_width="match_parent"
+        app:defaultIndicators="square"
+        app:interval="2500"
+        android:layout_height="200dp" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerWisata"
+        android:layout_below="@+id/sliderWisata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray" />
+</RelativeLayout>

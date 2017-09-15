@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/register_firstname_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_firstname"
+            android:inputType="text"
+            android:textColor="@color/colorPrimaryTextLight"
+            android:textColorHint="@color/colorPrimaryTextLight"
+            app:met_baseColor="@color/colorPrimaryTextLight"
+            app:met_errorColor="@color/error_input"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/colorPrimaryTextLight" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/register_lastname_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_lastname"
+            android:inputType="text"
+            android:textColor="@color/colorPrimaryTextLight"
+            android:textColorHint="@color/colorPrimaryTextLight"
+            app:met_baseColor="@color/colorPrimaryTextLight"
+            app:met_errorColor="@color/error_input"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/colorPrimaryTextLight" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/register_username_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_username"
+            android:inputType="text"
+            android:textColor="@color/colorPrimaryTextLight"
+            android:textColorHint="@color/colorPrimaryTextLight"
+            app:met_baseColor="@color/colorPrimaryTextLight"
+            app:met_errorColor="@color/error_input"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/colorPrimaryTextLight" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/register_password_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:textColor="@color/colorPrimaryTextLight"
+            android:textColorHint="@color/colorPrimaryTextLight"
+            app:met_baseColor="@color/colorPrimaryTextLight"
+            app:met_errorColor="@color/error_input"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/colorPrimaryTextLight" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/register_bdate_field"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:hint="@string/hint_bdate"
+                android:inputType="text"
+                android:onClick="bdateAction"
+                android:textColor="@color/colorPrimaryTextLight"
+                android:textColorHint="@color/colorPrimaryTextLight"
+                app:met_baseColor="@color/colorPrimaryTextLight"
+                app:met_errorColor="@color/error_input"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/colorPrimaryTextLight" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/register_gender_field"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:hint="@string/hint_gender"
+                android:inputType="text"
+                android:onClick="genderAction"
+                android:textColor="@color/colorPrimaryTextLight"
+                android:textColorHint="@color/colorPrimaryTextLight"
+                app:met_baseColor="@color/colorPrimaryTextLight"
+                app:met_errorColor="@color/error_input"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/colorPrimaryTextLight" />
+        </LinearLayout>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/register_phone_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_phone"
+            android:inputType="phone"
+            android:textColor="@color/colorPrimaryTextLight"
+            android:textColorHint="@color/colorPrimaryTextLight"
+            app:met_baseColor="@color/colorPrimaryTextLight"
+            app:met_errorColor="@color/error_input"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/colorPrimaryTextLight" />
+    </LinearLayout>
+</RelativeLayout>
