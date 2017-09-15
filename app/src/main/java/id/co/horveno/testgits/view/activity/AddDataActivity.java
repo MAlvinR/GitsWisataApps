@@ -63,7 +63,9 @@ public class AddDataActivity extends AppCompatActivity implements View.OnClickLi
     private String kategoriWisata;
     private String lokasiWisata;
     private String deskripsiWisata;
-    private String imgPathWisata;
+
+    int categoryClickCount = 0;
+
 
 
     @Override
@@ -74,6 +76,9 @@ public class AddDataActivity extends AppCompatActivity implements View.OnClickLi
 
         setSupportActionBar(uploadToolbar);
         getSupportActionBar().setTitle("Upload New Data");
+
+        addCategoryField.setFocusable(false);
+        addCategoryField.setFocusableInTouchMode(false);
 
         btn_upload.setEnabled(false);
 
@@ -202,6 +207,11 @@ public class AddDataActivity extends AppCompatActivity implements View.OnClickLi
 
     @OnClick(R.id.add_category_field)
     public void chooseCategory(View view) {
+
+    if (categoryClickCount == 0) {
+        addCategoryField.setFocusable(true);
+        addCategoryField.setFocusableInTouchMode(true);
+
         PopupMenu categorymenu = new PopupMenu(AddDataActivity.this, addCategoryField);
         categorymenu.getMenuInflater().inflate(R.menu.menu_kategori, categorymenu.getMenu());
 
@@ -226,6 +236,9 @@ public class AddDataActivity extends AppCompatActivity implements View.OnClickLi
     }
 
 
+    }
+
+
     @Override
     public void onClick(View v) {
         if (v == imgUpload) {
@@ -236,5 +249,11 @@ public class AddDataActivity extends AppCompatActivity implements View.OnClickLi
             uploadMultipart();
             finish();
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
     }
 }

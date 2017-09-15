@@ -44,4 +44,5 @@
     <string name="action_upload">Upload</string>
     <string name="credential_notif">Please enter your credential!</string>
     <string name="upload_notif">Please enter your data!</string>
+    <string name="upload_img_alert">Inser your image first!</string>
 </resources>

@@ -3,6 +3,7 @@ package id.co.horveno.testgits.presenter;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 
 import id.co.horveno.testgits.R;
 import id.co.horveno.testgits.model.Register;
@@ -31,13 +32,6 @@ public class RegisterPresenter {
                                 final String birthdate,
                                 final String gender,
                                 final String phone) {
-        final ProgressDialog dialog = new ProgressDialog(mContext);
-        dialog.setIndeterminate(true);
-        dialog.setCancelable(false);
-        dialog.setInverseBackgroundForced(false);
-        dialog.setCanceledOnTouchOutside(true);
-        dialog.setMessage(mContext.getString(R.string.please_wait));
-        dialog.show();
 
         ApiService.getInstance()
                 .getApiInterface()
@@ -46,18 +40,17 @@ public class RegisterPresenter {
                     @Override
                     public void onResponse(Call<Register> call, Response<Register> response) {
                         if (response.isSuccessful()) {
-                            dialog.dismiss();
+                            Log.d("onFailure_Register", username + "\n" + password);
                             mContext.startActivity(new Intent(mContext, LoginActivity.class));
                             mRegisterView.onSuccessResponse(mContext.getString(R.string.register_success));
                         } else {
-                            dialog.dismiss();
                             mRegisterView.onErrorResponse(response.body().msgRegister);
                         }
                     }
 
                     @Override
                     public void onFailure(Call<Register> call, Throwable t) {
-                        t.getMessage();
+                        Log.d("onFailure_Register", t.getMessage());
                     }
                 });
     }

@@ -76,13 +76,6 @@ public class WisataActivity extends AppCompatActivity implements WisataView {
     }
 
     @Override
-    protected void onResume() {
-        super.onResume();
-        wisataPresenter.getWisata(mArrSort, mSort);
-        wisataPresenter.getBanner(slider_wisata, mArrSort, mSort);
-    }
-
-    @Override
     public void onTravelResponse(List<Wisata.WisataData> wisataData) {
         adapter = new WisataAdapter(this, wisataData);
         listWisata.setAdapter(adapter);

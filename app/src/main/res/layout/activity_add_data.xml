@@ -34,6 +34,13 @@
             android:scaleType="centerCrop"
             android:src="@drawable/upload" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/upload_img_alert"
+            android:padding="@dimen/dimen_8dp"
+            android:layout_gravity="center"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
